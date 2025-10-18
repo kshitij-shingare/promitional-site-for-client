@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udyami Enterprises - Security Nets Import & Export Across India</title>
+    <meta name="description" content="Leading provider of high-quality security nets, safety nets, bird nets, and construction nets across India. Trusted by industries nationwide for superior safety solutions.">
+    <meta name="author" content="Udyami Enterprises">
+    <meta name="keywords" content="security nets, safety nets, bird protection nets, construction nets, cargo nets, sports nets, India">
+    
+    <meta property="og:title" content="Udyami Enterprises - Securing India, One Net at a Time">
+    <meta property="og:description" content="Premium security and safety net solutions across India. Quality products, fast delivery, and pan-India service.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-logo" onclick="scrollToTop()">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Udyami Enterprises</span>
+                    <span class="logo-subtitle">Security Net Solutions</span>
+                </div>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#" onclick="scrollToSection(event, 'hero')">Home</a>
+                <a href="#about" onclick="scrollToSection(event, 'about')">About</a>
+                <a href="#products" onclick="scrollToSection(event, 'products')">Products</a>
+                <a href="#gallery" onclick="scrollToSection(event, 'gallery')">Gallery</a>
+                <a href="#faq" onclick="scrollToSection(event, 'faq')">FAQ</a>
+                <a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a>
+                <button class="nav-cta" onclick="openQuoteModal()">Get Quote</button>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"/>
+                    <line x1="4" x2="20" y1="6" y2="6"/>
+                    <line x1="4" x2="20" y1="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+            <a href="#" onclick="scrollToSection(event, 'hero'); toggleMobileMenu()">Home</a>
+            <a href="#about" onclick="scrollToSection(event, 'about'); toggleMobileMenu()">About</a>
+            <a href="#products" onclick="scrollToSection(event, 'products'); toggleMobileMenu()">Products</a>
+            <a href="#gallery" onclick="scrollToSection(event, 'gallery'); toggleMobileMenu()">Gallery</a>
+            <a href="#faq" onclick="scrollToSection(event, 'faq'); toggleMobileMenu()">FAQ</a>
+            <a href="#contact" onclick="scrollToSection(event, 'contact'); toggleMobileMenu()">Contact</a>
+            <button class="nav-cta" onclick="openQuoteModal(); toggleMobileMenu()">Request a Quote</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Securing India, One Net at a Time</h1>
+            <p class="hero-subtitle animate-fade-in">Premium security and safety net solutions across India. Quality products, fast delivery, and pan-India service.</p>
+            <div class="hero-buttons animate-fade-in">
+                <button class="btn btn-primary" onclick="openQuoteModal()">Request a Quote</button>
+                <button class="btn btn-secondary" onclick="scrollToSection(event, 'contact')">Get in Touch</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content animate-fade-in">
+                    <h2 class="section-title">About Udyami Enterprises</h2>
+                    <p class="about-text">With over a decade of expertise in safety solutions, Udyami Enterprises has established itself as a trusted name in the security net industry across India. We specialize in importing and distributing high-quality safety nets that meet international standards.</p>
+                    <p class="about-text">Our commitment to excellence and customer satisfaction has made us the preferred choice for industries, construction sites, residential complexes, and commercial establishments nationwide.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Cities Covered</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 11-6 6v3h9l3-3"/>
+                                    <path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Quality Certified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-scale-in">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop" alt="Udyami Enterprises team and operations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section section-alt">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Comprehensive range of safety and security net solutions</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card animate-scale-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=600&h=400&fit=crop" alt="Safety Nets for construction and industrial use">
+                        <div class="product-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Safety Nets</h3>
+                        <p class="product-description">High-strength safety nets for construction sites and industrial applications. Tested for maximum load capacity.</p>
+                        <ul class="product-features">
+                            <li>UV resistant material</li>
+                            <li>Weather-proof construction</li>
+                            <li>Customizable sizes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card animate-scale-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600&h=400&fit=crop" alt="Bird protection nets for buildings">
+                        <div class="product-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 7h.01"/>
+                                <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/>
+                                <path d="m20 7 2 .5-2 .5"/>
+                                <path d="M10 18v3"/>
+                                <path d="M14 17.75V21"/>
+                                <path d="M7 18a6 6 0 0 0 3.84-10.61"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Bird Protection Nets</h3>
+                        <p class="product-description">Humane bird control solutions for residential and commercial buildings. Protects without harming.</p>
+                        <ul class="product-features">
+                            <li>Transparent design</li>
+                            <li>Long-lasting durability</li>
+                            <li>Easy installation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card animate-scale-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" alt="Cargo nets for transportation">
+                        <div class="product-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16.8 3A5 5 0 0 0 12 6.6 5 5 0 0 0 7.2 3a5 5 0 0 0-5 5.2c0 1.8.7 3.5 2 4.7l6.8 6.8 6.8-6.8c1.3-1.2 2-2.9 2-4.7a5 5 0 0 0-5-5.2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cargo Nets</h3>
+                        <p class="product-description">Heavy-duty cargo nets for secure transportation and storage. Trusted by logistics companies nationwide.</p>
+                        <ul class="product-features">
+                            <li>High tensile strength</li>
+                            <li>Industrial grade quality</li>
+                            <li>Various mesh sizes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card animate-scale-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&h=400&fit=crop" alt="Sports nets for stadiums and courts">
+                        <div class="product-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="13" r="8"/>
+                                <path d="M12 9v4l2 2"/>
+                                <path d="M5 3 2 6"/>
+                                <path d="m22 6-3-3"/>
+                                <path d="M6.38 18.7 4 21"/>
+                                <path d="M17.64 18.67 20 21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sports Nets</h3>
+                        <p class="product-description">Professional-grade sports nets for cricket, football, tennis, and more. Used in stadiums across India.</p>
+                        <ul class="product-features">
+                            <li>Impact resistant</li>
+                            <li>All-weather performance</li>
+                            <li>Professional standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">We provide unmatched quality and service across India</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-scale-in">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Premium Quality</h3>
+                    <p class="feature-description">ISO certified products that meet international safety standards</p>
+                </div>
+
+                <div class="feature-card animate-scale-in">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="16" height="13" x="6" y="4" rx="2"/>
+                            <path d="m22 7-7.1 3.78c-.57.3-1.23.3-1.8 0L6 7"/>
+                            <path d="M2 8v11c0 1.1.9 2 2 2h14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p class="feature-description">Quick dispatch and delivery across all major cities in India</p>
+                </div>
+
+                <div class="feature-card animate-scale-in">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Pan-India Service</h3>
+                    <p class="feature-description">Serving customers in over 50 cities nationwide</p>
+                </div>
+
+                <div class="feature-card animate-scale-in">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Expert Support</h3>
+                    <p class="feature-description">Dedicated team to assist with installation and maintenance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section-alt">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">Trusted by businesses and individuals across India</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-scale-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Excellent quality safety nets for our construction project. The installation was quick and professional. Highly recommended for all safety requirements."</p>
+                    <div class="testimonial-author">
+                        <strong>Rajesh Kumar</strong>
+                        <span>Construction Manager, Mumbai</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-scale-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"We installed bird protection nets in our entire apartment complex. The results are amazing and the nets are almost invisible. Great product quality!"</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Sharma</strong>
+                        <span>Resident Welfare Association, Delhi</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-scale-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Outstanding service and product quality. The cargo nets we purchased have significantly improved our logistics operations. Worth every rupee!"</p>
+                    <div class="testimonial-author">
+                        <strong>Anil Patel</strong>
+                        <span>Logistics Director, Bangalore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-subtitle">A showcase of our successful installations across India</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item animate-scale-in">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop" alt="High-Rise Construction Safety project in Mumbai">
+                    <div class="gallery-overlay">
+                        <h3>High-Rise Construction Safety</h3>
+                        <p>Mumbai, Maharashtra</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-scale-in">
+                    <img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&h=400&fit=crop" alt="Sports Stadium Protection project in Bangalore">
+                    <div class="gallery-overlay">
+                        <h3>Sports Stadium Protection</h3>
+                        <p>Bangalore, Karnataka</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-scale-in">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" alt="Industrial Warehouse Nets project in Delhi NCR">
+                    <div class="gallery-overlay">
+                        <h3>Industrial Warehouse Nets</h3>
+                        <p>Delhi NCR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about our products and services</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What types of safety nets do you offer?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive range including construction safety nets, bird protection nets, cargo nets, sports nets, and industrial safety nets. All our products meet international quality standards and are available in various sizes and specifications.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide installation services?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide professional installation services across India. Our experienced team ensures proper fitting and safety compliance. Installation charges vary based on location and project size.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is the warranty period for your products?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our safety nets come with a standard warranty ranging from 1 to 5 years depending on the product type and usage conditions. All products are tested for UV resistance and durability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does delivery take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Delivery typically takes 3-7 business days for major cities and 7-14 days for remote locations. Express delivery options are available for urgent requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I get a custom size net?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in custom-sized nets for unique requirements. Simply provide us with your specifications, and we'll manufacture nets that perfectly fit your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">We're here to help with all your safety net requirements</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card animate-scale-in">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Our Office</h4>
+                            <p>123 Safety Street, Industrial Area<br>Mumbai, Maharashtra 400001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card animate-scale-in">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210<br>+91 98765 43211</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card animate-scale-in">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@udyami.com<br>sales@udyami.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-map animate-scale-in">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571423538!2d72.74109995!3d19.082502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper animate-scale-in">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="footer-logo-title">Udyami Enterprises</div>
+                            <div class="footer-logo-subtitle">Security Net Solutions</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">Leading provider of premium security and safety net solutions across India. Trusted by industries nationwide.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="scrollToSection(event, 'hero')">Home</a></li>
+                        <li><a href="#about" onclick="scrollToSection(event, 'about')">About Us</a></li>
+                        <li><a href="#products" onclick="scrollToSection(event, 'products')">Products</a></li>
+                        <li><a href="#gallery" onclick="scrollToSection(event, 'gallery')">Gallery</a></li>
+                        <li><a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Our Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Safety Nets</a></li>
+                        <li><a href="#products">Bird Protection Nets</a></li>
+                        <li><a href="#products">Cargo Nets</a></li>
+                        <li><a href="#products">Sports Nets</a></li>
+                        <li><a href="#products">Custom Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>123 Safety Street, Industrial Area<br>Mumbai, Maharashtra 400001</li>
+                        <li>+91 98765 43210</li>
+                        <li>info@udyami.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Udyami Enterprises. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuoteModal()">&times;</button>
+            <h2 class="modal-title">Request a Quote</h2>
+            <p class="modal-subtitle">Fill in the details and we'll get back to you within 24 hours</p>
+
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label for="quoteName">Full Name</label>
+                    <input type="text" id="quoteName" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteEmail">Email</label>
+                    <input type="email" id="quoteEmail" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quotePhone">Phone Number</label>
+                    <input type="tel" id="quotePhone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteProduct">Product Type</label>
+                    <select id="quoteProduct" name="product" required>
+                        <option value="">Select a product</option>
+                        <option value="safety-nets">Safety Nets</option>
+                        <option value="bird-nets">Bird Protection Nets</option>
+                        <option value="cargo-nets">Cargo Nets</option>
+                        <option value="sports-nets">Sports Nets</option>
+                        <option value="custom">Custom Solution</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteQuantity">Estimated Quantity (sq ft)</label>
+                    <input type="number" id="quoteQuantity" name="quantity" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quoteDetails">Additional Details</label>
+                    <textarea id="quoteDetails" name="details" rows="4" placeholder="Please provide any specific requirements or questions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
